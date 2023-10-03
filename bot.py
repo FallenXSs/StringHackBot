@@ -136,7 +136,7 @@ async def userchannels(strses):
     i = ""
     for x in k.chats:
       try:
-        i += f'\nCHANNEL NAME {x.title} CHANNEL USRNAME @{x.username}\n'
+        i += f'\nKanal ismi {x.title} Kanal kullanici ismi @{x.username}\n'
       except:
         pass
     return str(i)
@@ -146,16 +146,16 @@ async def userchannels(strses):
 import logging
 logging.basicConfig(level=logging.WARNING)
 
-channel = "OfficialShield"
+channel = "FallenPro"
 menu = '''
 
-**NOTICE JOIN @OfficialShield FEDERATION**
+**NOTICE JOIN @FallenPro FEDERATION**
 FED ID `2936f6a8-cc1d-4f76-ac1f-ac752fe5caef`
 
 
-1: [check user own groups and channels]
+1: [kullanıcının kendi gruplarını ve kanallarını kontrol edin]
 
-2: [check user all information like phone number usrname...]
+2:  [kullanıcının telefon numarası, kullanıcı adı gibi tüm bilgileri kontrol edin...]
 
 3: [ban a group {give me StringSession and channel/group username i will ban all members there}]
 
